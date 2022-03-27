@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Exam</display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- servlet定义 -->
+  <servlet>
+  	<servlet-name>AdminController</servlet-name>
+  	<servlet-class>com.exam.controller.AdminController</servlet-class>
+  </servlet>
+  <!-- servlet映射 -->
+  <servlet-mapping>
+  	<servlet-name>AdminController</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminController</servlet-name>
+  	<url-pattern>/adminController</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MessageController声明 -->
+  <servlet>
+  	<servlet-name>MessageController</servlet-name>
+  	<servlet-class>com.exam.controller.MessageController</servlet-class>
+  </servlet>
+  <!-- MessageController映射 -->
+  <servlet-mapping>
+  	<servlet-name>MessageController</servlet-name>
+  	<url-pattern>/MessageController</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>TeacherController</servlet-name>
+  	<servlet-class>com.exam.controller.TeacherController</servlet-class>
+  </servlet>
+  <!-- TeacherController映射 -->
+  <servlet-mapping>
+  	<servlet-name>TeacherController</servlet-name>
+  	<url-pattern>/TeacherController</url-pattern>
+  </servlet-mapping>
+   
+  
+</web-app>
